@@ -6,7 +6,7 @@ variable "subnet_ids" {
 variable "instance_type" {
   description = "The type of instance to start"
   type        = string
-  default     = "t3a.medium"
+  default     = "t3g.medium"
 }
 
 variable "project_name_prefix" {
