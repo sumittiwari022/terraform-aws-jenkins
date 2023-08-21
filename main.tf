@@ -6,7 +6,7 @@ data "aws_ami" "amazon-linux-2" {
   }
   filter {
     name   = "name"
-    values = ["amzn2-ami-*-arm64-*"]
+    values = ["amzn2-ami-*"]
   }
   owners = ["amazon"]
 }
