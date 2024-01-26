@@ -128,7 +128,7 @@ resource "aws_instance" "ec2" {
   #disable_api_stop       = var.disable_api_stop
   user_data               = data.cloudinit_config.server_config.rendered
   source_dest_check       = var.source_dest_check
-
+  key_name                = "etv-pre-prod"
   volume_tags             = merge(var.common_tags, tomap({ "Name" : "${var.project_name_prefix}-jenkins" }))
   tags                    = merge(var.common_tags, tomap({ "Name" : "${var.project_name_prefix}-jenkins" }))
 
